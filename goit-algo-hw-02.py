@@ -32,6 +32,7 @@ except KeyboardInterrupt:
 from collections import deque
 
 def is_palindrome(s):
+    s = s.lower().replace(" ", "")
    # Create a deque with characters of the string directly
     d = deque(s)
     
